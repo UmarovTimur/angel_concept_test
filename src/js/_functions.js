@@ -18,7 +18,7 @@
 // window.addEventListener('resize', func);
 
 // Фикс фулскрин-блоков
-// import './functions/fix-fullheight';
+import "./functions/fix-fullheight.js";
 
 // Реализация бургер-меню
 // import { burger } from './functions/burger';
@@ -49,13 +49,7 @@
 //   placement: 'right'
 // });
 
-// Подключение свайпера
-// import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import "./components/sliders.js";
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

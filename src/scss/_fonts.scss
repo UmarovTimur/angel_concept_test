@@ -1,1 +1,296 @@
-// @include font-face("Muller", "MullerRegular", 400, normal);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-ThinItalic",
+  100,
+  italic
+);
+@include font-face("GT Eesti Pro Text", "GTEestiProText-Medium", 500, normal);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-LightItalic",
+  300,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-Bold",
+  700,
+  normal
+);
+@include font-face("GT Eesti Pro Text", "GTEestiProText-Light", 300, normal);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-MediumItalic",
+  500,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-RegularItalic",
+  400,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Text Book",
+  "GTEestiProText-Book",
+  400,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-BoldItalic",
+  700,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-UltraLightItalic",
+  200,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-Thin",
+  100,
+  normal
+);
+@include font-face("GT Eesti Pro Text", "GTEestiProText-Regular", 400, normal);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-Light",
+  300,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-UltraBold",
+  800,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-UltraBoldItalic",
+  800,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-Medium",
+  500,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-UltraLight",
+  200,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-RegularItalic",
+  400,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-LightItalic",
+  300,
+  italic
+);
+@include font-face("GT Eesti Pro Text", "GTEestiProText-Bold", 700, normal);
+@include font-face("GT Eesti Pro Text", "GTEestiProText-Thin", 100, normal);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-UltraLightItalic",
+  200,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-BoldItalic",
+  700,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-MediumItalic",
+  500,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Text Book",
+  "GTEestiProText-BookItalic",
+  400,
+  italic
+);
+@include font-face(
+  "GT Eesti Pro Text",
+  "GTEestiProText-UltraLight",
+  200,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-Regular",
+  400,
+  normal
+);
+@include font-face(
+  "GT Eesti Pro Display",
+  "GTEestiProDisplay-ThinItalic",
+  100,
+  italic
+);
+
+// ==================================== KyivType Sans ==========================================
+
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Thin",
+  100,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Light",
+  300,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Light-",
+  300,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Light2",
+  300,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Light3",
+  300,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Regular",
+  400,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Regular-",
+  400,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Regular2",
+  400,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Regular3",
+  400,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Medium",
+  500,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Medium-",
+  500,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Medium2",
+  500,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Medium3",
+  500,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Bold",
+  700,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Bold-",
+  700,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Bold2",
+  700,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Bold3",
+  700,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Black",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Black-",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Black2",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Black3",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Heavy",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Heavy-",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Heavy2",
+  900,
+  normal
+);
+@include font-face(
+  "KyivType Sans",
+  "Dmitry Rastvortsev - KyivType Sans Heavy3",
+  900,
+  normal
+);

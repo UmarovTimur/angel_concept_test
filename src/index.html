@@ -7,10 +7,44 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <section class="hero">
+        <div class="hero__slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="hero__slider-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="hero__slide swiper-slide">
+
+              <div class="hero__slide-body container">
+                <h1 class="title hero__title">Ангел Concept — </br> центр премиального ухода и косметологии в Ставрополе
+                </h1>
+                <p class="hero__subtitle">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+                  профессионально и легко</p>
+
+                <button class="button button--gradient hero__button">
+                  <span class="button__text">подробнее об услугах</span>
+                  <span class="button__icon"></span>
+                </button>
+              </div>
+
+              <div class="hero__slide-background">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/Angel_bg2.mp4" type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
     </main>
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
