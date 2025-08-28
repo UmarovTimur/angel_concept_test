@@ -1,31 +1,33 @@
 .hero {
+  position: relative;
+  border-bottom-left-radius: toRem(16);
+  border-bottom-right-radius: toRem(16);
+  overflow: hidden;
   // .hero__slider
 
   &__slider {
-    width: 100vw;
   }
 
   // .hero__slider-wrapper
 
   &__slider-wrapper {
+    display: flex;
   }
 
   // .hero__slide
 
   &__slide {
+    flex: 0 0 100vw;
     position: relative;
-    height: toRem(820);
+    height: var(--vh);
+    min-height: toRem(820);
   }
 
   // .hero__slide-body
 
   &__slide-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
     height: 100%;
-    padding-top: toRem(26);
+    padding-top: toRem(204);
     padding-bottom: toRem(26);
   }
 
@@ -39,14 +41,25 @@
 
   &__subtitle {
     color: var(--text-white);
-    font-weight: 400;
-    font-size: toRem(18);
     line-height: 140%;
+    max-width: toRem(470);
+    letter-spacing: -1%;
+    margin: 0 0 toRem(32) 0;
   }
 
   // .hero__button
 
   &__button {
+  }
+
+  // .hero__button-text
+
+  &__button-text {
+  }
+
+  // .hero__button-icon
+
+  &__button-icon {
   }
 
   // .hero__slide-background
@@ -63,7 +76,8 @@
       opacity: 0.4;
       z-index: -1;
     }
-    & video {
+    & video,
+    & img {
       position: absolute;
       top: 0;
       left: 0;
@@ -72,5 +86,139 @@
       z-index: -2;
       object-fit: cover;
     }
+  }
+
+  // .hero__pagination
+
+  &__pagination {
+    position: absolute;
+    display: flex;
+    column-gap: toRem(4);
+    bottom: toRem(58);
+    // max-width: toRem(1000);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  // .hero__pagination-card
+  &__pagination-card {
+    position: relative;
+    display: flex;
+    border-radius: toRem(20);
+    border: 1px solid var(--white-50, #ffffff0f);
+    background: var(--white-100, #ffffff1f);
+    padding: toRem(4);
+    width: toRem(148);
+    height: toRem(138);
+    backdrop-filter: blur(16px);
+    cursor: pointer;
+
+    overflow: visible;
+
+    color: var(--text-white);
+
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease,
+      color 0.3s ease, border-color 0.3s ease;
+
+    &.active {
+      background-color: var(--bg-white);
+      color: var(--text-primary);
+      width: toRem(270);
+
+      .hero__pagination-left {
+      }
+
+      .hero__pagination-num {
+        border: 1px solid #d5af6299;
+      }
+
+      .hero__pagination-title {
+      }
+
+      .hero__pagination-thumb {
+        width: toRem(124);
+        height: toRem(130);
+        border-radius: toRem(16);
+      }
+    }
+  }
+
+  // .hero__pagination-left
+  &__pagination-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // Начальный padding
+    padding: toRem(16) toRem(20) toRem(20) toRem(20);
+    transition: padding 0.3s ease;
+  }
+
+  // .hero__pagination-num
+  &__pagination-num {
+    border-radius: 50%;
+    border: 1px solid var(--white-100, #ffffff1f);
+    background: var(--white-100, #ffffff1f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: toRem(32);
+    height: toRem(32);
+    font-size: toRem(15);
+    font-family: "GT Eesti Pro Text";
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  // .hero__pagination-title
+  &__pagination-title {
+    font-size: toRem(12);
+    line-height: 120%;
+    max-width: toRem(100);
+  }
+
+  // .hero__pagination-thumb
+  &__pagination-thumb {
+    position: relative;
+    top: -1px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: auto;
+    height: auto;
+    border-radius: toRem(20);
+    overflow: hidden;
+
+    transition: width 0.3s ease, height 0.3s ease, flex-basis 0.3s ease,
+      border-radius 0.3s ease;
+  }
+
+  &__pagination-thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: toRem(138);
+    min-width: toRem(138);
+    object-fit: cover;
+  }
+  // .hero__pagination-progress-wrapper
+
+  &__pagination-progress-wrapper {
+    position: absolute;
+    left: 0;
+    background: var(--white-100, #ffffff1f);
+    bottom: toRem(-16);
+    width: 100%;
+    height: toRem(4);
+    border-radius: toRem(4);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+  }
+
+  // .hero__pagination-progress
+
+  &__pagination-progress {
+    height: 100%;
+    width: 0;
+    background: var(--bg-white);
+    opacity: 0.9;
   }
 }

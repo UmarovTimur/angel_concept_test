@@ -1,8 +1,10 @@
 .title {
   font-size: toRem(60);
-  margin-top: toRem(24);
+  margin-top: 0;
   margin-bottom: toRem(24);
   font-family: "GT Eesti Pro Text";
   color: var(--text-white);
   font-weight: 375;
+  line-height: 94%;
+  letter-spacing: toRem(-2.4);
 }

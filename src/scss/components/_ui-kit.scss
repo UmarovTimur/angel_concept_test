@@ -1,0 +1,28 @@
+[class^="button"] {
+  border: 0px solid transparent;
+  cursor: pointer;
+}
+
+.button--primary {
+  display: flex;
+  align-items: center;
+  column-gap: toRem(8);
+  padding: toRem(16) toRem(24);
+  background: linear-gradient(180deg, #d4b26f -66.86%, #a87c25 180.08%);
+  color: var(--text-white);
+  border-radius: toRem(50);
+
+  & .button__text {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: toRem(14);
+  }
+
+  & .button__icon {
+    @include flex-all-center();
+    width: toRem(24);
+    height: toRem(24);
+    background-color: var(--bg-white);
+    border-radius: 50%;
+  }
+}
