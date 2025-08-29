@@ -10,7 +10,6 @@ if (heroSlider) {
   const slides = heroSlider.querySelectorAll(".swiper-slide");
   const paginationContainer = heroSlider.querySelector(".hero__pagination");
 
-  // Вставляем стили прогресс-бара один раз
   const ensureProgressStyles = () => {
     const STYLE_ID = "hero-pagination-progress-styles";
     if (document.getElementById(STYLE_ID)) return;
@@ -34,22 +33,21 @@ if (heroSlider) {
 
   const swiper = new Swiper(heroSlider, {
     slidesPerView: 1,
-    speed: 500,
+    speed: 700,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
     loop: true,
     effect: "fade",
-
+    fadeEffect: {
+      crossFade: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+
     on: {
       init: function () {
         initCards(this);
@@ -68,7 +66,6 @@ if (heroSlider) {
   });
 }
 
-// Вспомогательные функции, которые можно вынести за пределы объекта 'on'
 function getCards() {
   return Array.from(document.querySelectorAll(".hero__pagination-card"));
 }
@@ -79,7 +76,7 @@ function getAutoplayDelay(swiperInstance) {
       swiperInstance.params &&
       swiperInstance.params.autoplay &&
       swiperInstance.params.autoplay.delay) ||
-      5000) + 400
+      5000) + 500
   );
 }
 
@@ -92,7 +89,7 @@ function resetProgressBar(bar) {
 
 function startProgressBar(bar, duration) {
   if (bar) {
-    void bar.offsetWidth; // Принудительный рефлоу для сброса анимации
+    void bar.offsetWidth;
     bar.style.animation = `heroFillProgress ${duration}ms linear forwards`;
   }
 }
@@ -137,7 +134,6 @@ function updateProgress(swiperInstance) {
 
   const duration = getAutoplayDelay(swiperInstance);
 
-  // Сбрасываем все прогресс-бары перед тем, как запустить активный
   cards.forEach((card) => {
     resetProgressBar(card.querySelector(".hero__pagination-progress"));
   });

@@ -1,6 +1,8 @@
 [class^="button"] {
   border: 0px solid transparent;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 
 .button--primary {
@@ -8,6 +10,9 @@
   align-items: center;
   column-gap: toRem(8);
   padding: toRem(16) toRem(24);
+  @media (max-width: toRem(1024)) {
+    padding: toRem(13) toRem(16);
+  }
   background: linear-gradient(180deg, #d4b26f -66.86%, #a87c25 180.08%);
   color: var(--text-white);
   border-radius: toRem(50);
@@ -16,6 +21,11 @@
     font-weight: 500;
     text-transform: uppercase;
     font-size: toRem(14);
+    padding: 0 toRem(6);
+    line-height: 124%;
+    @media (max-width: toRem(1024)) {
+      font-size: toRem(12);
+    }
   }
 
   & .button__icon {

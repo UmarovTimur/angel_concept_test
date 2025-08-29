@@ -3,6 +3,7 @@
 // colors
 :root {
   // base
+  --min-width: 320;
   --font-family: "KyivType Sans";
   --content-width: #{toRem(1360)};
   --container-offset: #{toRem(20)};

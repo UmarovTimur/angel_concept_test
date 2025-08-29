@@ -1,10 +1,14 @@
 .title {
-  font-size: toRem(60);
+  // font-size: toRem(60);
+  @include adaptiveValue("font-size", 60, 44, 1400, 390);
+
   margin-top: 0;
-  margin-bottom: toRem(24);
   font-family: "GT Eesti Pro Text";
   color: var(--text-white);
   font-weight: 375;
   line-height: 94%;
   letter-spacing: toRem(-2.4);
+  @media (max-width: toRem(1024)) {
+    line-height: 84%;
+  }
 }

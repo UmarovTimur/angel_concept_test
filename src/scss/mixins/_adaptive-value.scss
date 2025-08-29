@@ -1,4 +1,9 @@
 // Адаптивное свойство (clamp)
+$containerWidth: 1360 + 40;
+$minWidth: 320;
+$maxWidthContainer: 1360;
+
+// Адаптивное свойство (clamp)
 @mixin adaptiveValue(
   $property,
   $startSize,
