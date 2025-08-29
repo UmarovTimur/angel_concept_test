@@ -43,9 +43,9 @@ if (heroSlider) {
     fadeEffect: {
       crossFade: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    keyboard: {
+      enabled: true, // включаем управление
+      onlyInViewport: true, // работает только если слайдер в зоне видимости
     },
 
     on: {
