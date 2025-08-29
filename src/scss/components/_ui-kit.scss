@@ -16,6 +16,13 @@
   background: linear-gradient(180deg, #d4b26f -66.86%, #a87c25 180.08%);
   color: var(--text-white);
   border-radius: toRem(50);
+  transition: box-shadow 0.4s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.15);
+    }
+  }
 
   & .button__text {
     font-weight: 500;

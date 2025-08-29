@@ -1,7 +1,9 @@
 .hero {
   position: relative;
+  // @media (min-width: toRem(1024)) {
   border-bottom-left-radius: toRem(16);
   border-bottom-right-radius: toRem(16);
+  // }
   overflow: hidden;
   // .hero__slider
 
@@ -18,10 +20,17 @@
   // .hero__slide
 
   &__slide {
+    pointer-events: none;
+
     flex: 0 0 100vw;
     position: relative;
     height: var(--vh);
-    min-height: toRem(820);
+    @media (min-width: toRem(1024)) {
+      min-height: toRem(820);
+    }
+    &.swiper-slide-active {
+      pointer-events: auto;
+    }
   }
 
   // .hero__slide-body
@@ -39,8 +48,31 @@
   // .hero__title
 
   &__title {
+    position: relative;
     max-width: toRem(863);
     margin-bottom: toRem(24);
+  }
+
+  // .hero__title-underline
+
+  &__title-underline {
+    position: absolute;
+    right: toRem(59);
+    bottom: toRem(-38);
+    @include adaptiveValue("width", 178, 82);
+    @include adaptiveValue("height", 18, 12);
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    @media (max-width: toRem(991)) {
+      right: toRem(15);
+      bottom: toRem(-20);
+    }
   }
 
   // .hero__subtitle
@@ -51,8 +83,10 @@
     max-width: toRem(470);
     letter-spacing: -1%;
     margin-bottom: toRem(32);
+    font-size: toRem(18);
     @media (max-width: toRem(1024)) {
       margin-bottom: toRem(24);
+      font-size: toRem(16);
     }
   }
 
@@ -108,7 +142,7 @@
     left: 50%;
     transform: translateX(-50%);
     max-width: 100vw;
-    @include adaptiveValue("bottom", 61, 32, 1, 1024, 320);
+    @include adaptiveValue("bottom", 61, 48, 0, 1024, 320);
 
     @media (max-width: toRem(1024)) {
       width: calc(100% - 40px);
@@ -182,13 +216,13 @@
 
   // .hero__pagination-left
   &__pagination-left {
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     // Начальный padding
-    padding: toRem(12) toRem(24) toRem(20) toRem(10);
+    padding: toRem(12) toRem(26) toRem(20) toRem(10);
     transition: padding 0.3s ease;
   }
 

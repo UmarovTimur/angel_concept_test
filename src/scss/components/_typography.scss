@@ -1,6 +1,6 @@
 .title {
   // font-size: toRem(60);
-  @include adaptiveValue("font-size", 60, 44, 1400, 390);
+  @include adaptiveValue("font-size", 60, 44, 0, 1400, 390);
 
   margin-top: 0;
   font-family: "GT Eesti Pro Text";
